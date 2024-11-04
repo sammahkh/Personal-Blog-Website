@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding:20px 20px ;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 40px; 
+    color: rgb(243, 243, 112);
+}
+
+.logo h1{
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    height: 60px;
+    flex-direction: column; 
+    margin-top: 3px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0 ;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+     color: rgb(243, 243, 112);
+} 
+
+.search-container {
+    margin-top: 10px;
+    display: flex;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.search-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 1px;
+    color: white;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    color: #ccc;
+}
+
+/* For Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 6px; 
+    }
+
+    .search-container {
+        margin-top: 0; 
+        margin-left: 55px;
+    }
+
+    .logo{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logo i{
+        margin-right: 8px;
+    }
+
+}
+
+/* For Desktops*/
+@media (min-width: 1025px){
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px; 
+    }
+
+    .search-container {
+        margin-top: 0; 
+        margin-left: 60px;
+    }
+
+    .logo{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logo i{
+        margin-right: 8px;
+    }
+
+}
