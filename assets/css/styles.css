@@ -1,5 +1,7 @@
 @import url('header.css'); 
 @import url('posts-section.css');
+@import url('footer.css');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
