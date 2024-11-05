@@ -1,9 +1,10 @@
 @import url('header.css'); 
-
+@import url('posts-section.css');
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .container {
