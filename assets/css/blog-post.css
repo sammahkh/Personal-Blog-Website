@@ -1,0 +1,139 @@
+.blog-details {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    color: white;
+}
+
+.blog-details aside ul li{
+    list-style: none;
+    margin-left: -40px;
+}
+.blog-details aside ul li a{
+    color: rgba(243, 243, 112, 0.966);
+}
+
+.content{
+    border: 2px solid #8b8787;
+    padding: 12px;
+}
+
+.date{
+    color:#8b8787;
+}
+.date u{
+    color: white;
+}
+.blog-main {
+    flex: 2;
+}
+
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.blog-aside {
+    flex: 1;
+    margin-top: 2.2rem;
+}
+
+.author-info, .social-sharing {
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 12px rgba(243, 243, 112, 0.822); 
+}
+  
+.avatar:hover{
+ cursor: pointer;
+}
+
+.social-link {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #8b8787;
+}
+
+.colored-line{
+    border: none;             
+    height: 2px;                 
+    background-color: #FF5733;
+}
+
+.aside-titles{
+    color: #D3D3D3;
+}
+
+.blog-post h2{
+    color: rgba(241, 119, 92, 0.904);
+    margin-bottom: 0.5rem;
+}
+
+
+.pagination-buttons {
+    margin-top: 30px;
+}
+
+.pagination-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff5833da;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination-button:hover {
+    background-color:#ff5833da ;
+    transform: translateY(-2px);
+}
+
+.pagination-button:disabled {
+    background-color: #f1765aad;
+    cursor: not-allowed;
+}
+
+.older-posts {
+    margin-right: 3px;
+}
+
+.newer-posts {
+    margin-left: auto;
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .blog-details {
+        flex-direction: row;
+        padding: 1.8rem;
+        margin: .4rem 1rem;
+    }
+    .blog-aside {
+        margin-left: 4rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .blog-details {
+        flex-direction: row;
+        max-width: 1200px;
+        margin: auto 1.8rem;
+    }
+    .blog-aside {
+        margin-left: 4rem;
+    }
+
+}
